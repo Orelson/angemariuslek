@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Intensif : Marketing Digital & IA - Devenez Autonome en 3 semaines</title>
+    
+    <!-- Tailwind CSS pour un design rapide et responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) pour les animations au défilement -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Définition du thème principal */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a192f; /* Bleu Nuit Profond */
+            color: #e6f1ff; /* Blanc cassé pour le texte, plus doux pour les yeux */
+            overflow-x: hidden; /* Empêche le scroll horizontal */
+        }
+
+        /* Effet d'aurore boréale en fond */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 15% 25%, rgba(29, 78, 216, 0.2), transparent 40%),
+                        radial-gradient(circle at 85% 75%, rgba(79, 70, 229, 0.2), transparent 40%);
+            animation: aurora 15s infinite linear;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        @keyframes aurora {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Style des titres pour un impact visuel */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        .text-glow {
+             text-shadow: 0 0 8px rgba(99, 102, 241, 0.5), 0 0 20px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Style des boutons d'appel à l'action (CTA) */
+        .cta-button {
+            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(79, 70, 229, 0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.8), 0 0 50px rgba(79, 70, 229, 0.5);
+        }
+
+        /* Style des sections pour une meilleure structure */
+        .section-container {
+            padding: 4rem 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .section-container {
+                padding: 6rem 2rem;
+            }
+        }
+        
+        /* Personnalisation des détails pour l'accordéon FAQ */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- =========== HEADER =========== -->
+    <header class="fixed w-full top-0 z-50 bg-opacity-80 backdrop-blur-md border-b border-blue-900/50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                <i class="fa-solid fa-rocket text-indigo-400"></i> Accélérateur
+            </a>
+            <a href="https://wa.me/+2250554806243" target="_blank" rel="noopener noreferrer" class="cta-button text-white font-bold py-2 px-6 rounded-full text-sm sm:text-base">
+                Postuler
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========== SECTION 1: HÉROS =========== -->
+        <section class="min-h-screen flex items-center justify-center text-center pt-24 pb-12" style="background: radial-gradient(ellipse at 50% 30%, rgba(29, 78, 216, 0.15), transparent 70%);">
+            <div class="max-w-4xl mx-auto px-6">
+                <span class="inline-block bg-indigo-500/10 text-indigo-300 px-4 py-1 rounded-full text-sm mb-4" data-aos="fade-up">Coaching individuel intensif - 3 Semaines</span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 text-glow" data-aos="fade-up" data-aos-delay="100">
+                    Le système pour attirer vos clients grâce à l'IA.
+                </h1>
+                <p class="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">
+                    Un accompagnement 100% personnalisé pour maîtriser le marketing digital, créer votre premier agent IA et repartir avec un plan d'action concret.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://wa.me/+2250554806243" target="_blank" rel="noopener noreferrer" class="cta-button text-white font-bold py-4 px-10 rounded-full text-lg">
+                        Je postule pour une des 2 places
+                    </a>
+                    <p class="mt-4 text-sm text-indigo-300">⚠️ <strong>Seulement 2 places disponibles.</strong> Candidatures ouvertes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== SECTION 2: PROBLÈME =========== -->
+        <section class="section-container bg-blue-900/10">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12" data-aos="fade-up">Vous vous reconnaissez ?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-solid fa-compass-drafting text-3xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Stratégie floue</h3>
+                        <p class="text-blue-200">Vous publiez du contenu sans réelle stratégie, sans voir de résultats concrets pour votre projet.</p>
+                    </div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-robot text-3xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">IA intimidante</h3>
+                        <p class="text-blue-200">L'intelligence artificielle vous semble être une montagne technologique réservée aux experts.</p>
+                    </div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-map-location-dot text-3xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Manque de plan</h3>
+                        <p class="text-blue-200">Vous savez que vous devez agir, mais vous êtes paralysé(e) par le manque d'un plan clair.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =========== SECTION 3: SOLUTION & TRANSFORMATION =========== -->
+        <section class="section-container">
+            <div class="max-w-5xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white" data-aos="fade-up">
+                    Imaginez : dans 3 semaines, vous ne subissez plus le marketing, vous le pilotez.
+                </h2>
+                <p class="mt-4 text-lg text-blue-200 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Ce programme est une transformation. Nous allons construire ensemble votre système de croissance, étape par étape.</p>
+            </div>
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-blue-900/20 rounded-2xl p-6 md:p-8 border border-blue-800/50">
+                    <div class="grid md:grid-cols-2 gap-6 items-center">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl font-bold mb-4 text-red-400">Avant</h3>
+                            <ul class="space-y-3 text-blue-200">
+                                <li class="flex items-start"><i class="fa-solid fa-circle-xmark mt-1 mr-3 text-red-400/80"></i> Vous naviguez à vue, sans stratégie claire.</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-xmark mt-1 mr-3 text-red-400/80"></i> Vous passez des heures à créer du contenu.</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-xmark mt-1 mr-3 text-red-400/80"></i> Vous ne savez pas quoi dire pour vendre.</li>
+                            </ul>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-2xl font-bold mb-4 text-green-400">✅ Après les 3 semaines</h3>
+                            <ul class="space-y-3 text-white">
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check mt-1 mr-3 text-green-400/80"></i> Vous avez une feuille de route AARRR sur 90 jours.</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check mt-1 mr-3 text-green-400/80"></i> Vous générez des idées et des posts en minutes avec l'IA.</li>
+                                <li class="flex items-start"><i class="fa-solid fa-circle-check mt-1 mr-3 text-green-400/80"></i> Vous avez des scripts et un agent IA qui répond aux clients.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== SECTION 4: PROGRAMME (CORRIGÉE) =========== -->
+        <section class="section-container bg-blue-900/10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white" data-aos="fade-up">Votre voyage en 3 semaines pour construire votre funnel AARRR</h2>
+                </div>
+                
+                <!-- Conteneur de la timeline -->
+                <div class="relative">
+                    <!-- Ligne verticale pour desktop, cachée sur mobile -->
+                    <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-blue-800 hidden md:block" aria-hidden="true"></div>
+
+                    <!-- Layout pour mobile: simple liste verticale -->
+                    <!-- Layout pour desktop: grille en quinconce -->
+                    <div class="space-y-12 md:space-y-0">
+
+                        <!-- Événement 1: Semaine 1 -->
+                        <div class="md:grid md:grid-cols-2 md:gap-16 items-center" data-aos="fade-up">
+                            <!-- Bloc de contenu -->
+                            <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50 md:col-start-2">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <div class="bg-indigo-500/20 px-4 py-2 rounded-lg border border-indigo-700/50">
+                                         <p class="font-bold text-indigo-300">Semaine 1</p>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">L'Attraction</h3>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-2 text-indigo-300">Acquisition & Activation</h4>
+                                <p class="text-blue-200">On apprend à attirer les bonnes personnes avec du contenu percutant et des publicités intelligentes (avec Copy.ai, Opus Clip), puis à les "activer" avec une expérience de valeur mémorable.</p>
+                            </div>
+                        </div>
+
+                        <!-- Événement 2: Semaine 2 -->
+                        <div class="md:grid md:grid-cols-2 md:gap-16 items-center" data-aos="fade-up">
+                            <!-- Bloc de contenu -->
+                            <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50 md:col-start-1 md:row-start-1">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <div class="bg-indigo-500/20 px-4 py-2 rounded-lg border border-indigo-700/50">
+                                         <p class="font-bold text-indigo-300">Semaine 2</p>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">La Relation</h3>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-2 text-indigo-300">La Relation & La Transaction</h4>
+                                <p class="text-blue-200">On transforme l'attention en confiance en créant une relation (avec ElevenLabs, Brevo), puis on structure une offre irrésistible pour convertir cette confiance en revenu.</p>
+                            </div>
+                        </div>
+
+                        <!-- Événement 3: Semaine 3 -->
+                        <div class="md:grid md:grid-cols-2 md:gap-16 items-center" data-aos="fade-up">
+                            <!-- Bloc de contenu -->
+                            <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50 md:col-start-2">
+                                <div class="flex items-center gap-4 mb-3">
+                                    <div class="bg-indigo-500/20 px-4 py-2 rounded-lg border border-indigo-700/50">
+                                         <p class="font-bold text-indigo-300">Semaine 3</p>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">L'Amplification</h3>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-2 text-indigo-300">Automatisation & Croissance</h4>
+                                <p class="text-blue-200">On automatise votre service client en construisant votre agent IA (avec Voiceflow), puis on met en place un système pour amplifier votre croissance et mesurer vos résultats.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== SECTION 5: OFFRE & PRIX =========== -->
+        <section id="offre" class="section-container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-aos="fade-up">Une offre de lancement unique.</h2>
+                <p class="text-lg text-blue-200 mb-10" data-aos="fade-up" data-aos-delay="100">
+                    Je recherche <strong>2 profils ultra-motivés</strong> pour cette première session. Votre succès sera ma meilleure publicité. C'est pourquoi je propose ce tarif exceptionnel qui ne se représentera pas.
+                </p>
+
+                <div class="bg-gradient-to-br from-blue-900 to-indigo-900/70 p-8 md:p-12 rounded-3xl border border-indigo-700/50" data-aos="zoom-in">
+                    <h3 class="text-2xl font-bold text-white mb-4">Votre investissement exceptionnel :</h3>
+                    <div class="text-6xl md:text-7xl font-extrabold text-white my-6 text-glow">
+                        200 000 F CFA
+                    </div>
+                    <p class="text-indigo-200 mb-8">(Possibilité de régler en 2 tranches de 100 000 F CFA)</p>
+                    
+                    <div class="bg-blue-900/50 text-indigo-200 p-4 rounded-xl border border-indigo-800 mb-8 text-left">
+                        <p class="font-bold mb-2"><i class="fa-solid fa-shield-halved mr-2"></i>Ma Garantie de Confiance Totale</p>
+                        <p class="text-sm">Si, à la fin de notre première session, vous n'êtes pas convaincu, je vous rembourse intégralement. Sans discussion. Vous ne prenez aucun risque.</p>
+                    </div>
+
+                    <a href="https://wa.me/+2250554806243" target="_blank" rel="noopener noreferrer" class="cta-button w-full text-white font-bold py-4 px-10 rounded-full text-xl block">
+                        Je postule pour une des 2 places
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== SECTION 6: DELIVRABLES =========== -->
+        <section class="section-container bg-blue-900/10">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-white" data-aos="fade-up">Ce que vous aurez concrètement entre les mains :</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up"><i class="fa-solid fa-file-signature text-2xl text-indigo-400 mb-3"></i><p>Un document de stratégie complet</p></div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="50"><i class="fa-solid fa-robot text-2xl text-indigo-400 mb-3"></i><p>Votre premier agent IA fonctionnel</p></div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-chart-line text-2xl text-indigo-400 mb-3"></i><p>Un tableau de bord AARRR</p></div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="150"><i class="fa-solid fa-users text-2xl text-indigo-400 mb-3"></i><p>Accès à vie à la communauté</p></div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-video text-2xl text-indigo-400 mb-3"></i><p>Enregistrements de toutes les sessions</p></div>
+                    <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-800/50" data-aos="fade-up" data-aos-delay="250"><i class="fa-solid fa-folder-open text-2xl text-indigo-400 mb-3"></i><p>Tous les templates et prompts</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =========== SECTION 7: FAQ =========== -->
+        <section class="section-container">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-white" data-aos="fade-up">Vous avez des questions ?</h2>
+                </div>
+                <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                    <details class="bg-blue-900/20 p-5 rounded-lg border border-blue-800/50 cursor-pointer group">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-white">
+                            Je suis un vrai débutant, est-ce pour moi ?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </summary>
+                        <p class="text-blue-200 mt-4">Oui, absolument. Le programme est conçu pour partir des bases. Nous construisons tout, étape par étape. La seule condition est votre motivation.</p>
+                    </details>
+                     <details class="bg-blue-900/20 p-5 rounded-lg border border-blue-800/50 cursor-pointer group">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-white">
+                           Quels résultats concrets puis-je espérer ?
+                           <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </summary>
+                        <p class="text-blue-200 mt-4">L'objectif est de repartir avec un système fonctionnel : une stratégie claire, des contenus prêts, une campagne lancée, un agent IA actif et surtout, les compétences pour continuer à piloter votre croissance en toute autonomie.</p>
+                    </details>
+                     <details class="bg-blue-900/20 p-5 rounded-lg border border-blue-800/50 cursor-pointer group">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-white">
+                           Pourquoi seulement 2 places ?
+                           <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </summary>
+                        <p class="text-blue-200 mt-4">Pour garantir une qualité et une personnalisation maximales. Je consacre personnellement plus de 20 heures de mon temps à chaque participant (sessions, support, préparation). C'est un véritable coaching sur-mesure, pas une formation de groupe.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- =========== FOOTER =========== -->
+    <footer class="bg-blue-900/20 border-t border-blue-900/50">
+        <div class="max-w-7xl mx-auto px-6 py-8 text-center text-blue-300">
+            <p>&copy; 2025 ANGE MARIUS LEK. Tous droits réservés.</p>
+            <p class="text-sm mt-2">Un programme conçu avec passion à Abidjan.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <!-- Liens mis à jour avec les icônes de Facebook et TikTok -->
+                <a href="https://www.linkedin.com/in/ange-marius-lekpea/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a href="https://web.facebook.com/angemariuslekp#/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="https://www.tiktok.com/@marius.lek" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                <a href="http://wa.me/+2250554806243" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialisation de la librairie d'animation au défilement
+        AOS.init({
+            duration: 700, // durée de l'animation
+            once: true,    // l'animation ne se joue qu'une seule fois
+        });
+    </script>
+</body>
+</html>
